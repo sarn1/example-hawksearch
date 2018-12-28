@@ -44,8 +44,7 @@ class HawkSearch {
   }
 
   private static function set($type, $params = null) {
-    // custom data route
-    //self::$api_url = "http://".self::$environment.".hawksearch.net/sites/".self::$engine_name."/?hawkoutput=custom&hawkitemlist=json";
+    // htmlobj url
     self::$api_url = "http://".self::$environment.".hawksearch.net/sites/".self::$engine_name."/?hawkoutput=html";
     self::$api_type = "item";
 
@@ -143,7 +142,6 @@ class HawkSearch {
 
     self::$api_body = (self::$caller == 'SEARCH') ? json_decode(substr($data, $header_len)) : substr($data, $header_len);
 
-    //pqd (self::$api_body);
     //die(self::$api_body);
   }
 

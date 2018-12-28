@@ -13,13 +13,13 @@ $a = HawkSearch::search($params);
   <script src="https://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js" type="text/javascript"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
 
   <!-- Hawk Search Header Includes -->
   <script type="text/javascript">
       //<![CDATA[
       (function (HawkSearch, undefined) {
-          HawkSearch.BaseUrl = '<?php echo PROXY_URL ?>';
+          HawkSearch.BaseUrl = '<?php echo HTML_PROXY_URL ?>';
           HawkSearch.TrackingUrl =
               'http://dev.hawksearch.net/sites/<?php echo ENGINE_NAME ?>';
           if ("https:" == document.location.protocol) {
