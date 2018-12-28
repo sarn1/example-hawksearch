@@ -51,6 +51,7 @@ class HawkSearch {
   }
 
   private static function set($type, $params = null) {
+
     // hybrid url
     self::$api_url = "http://".self::$environment.".hawksearch.net/sites/".self::$engine_name."/?hawkoutput=custom&hawkitemlist=json";
     self::$api_type = "item";
@@ -76,9 +77,6 @@ class HawkSearch {
           }
         }
       }
-    }
-    if (function_exists("pc")) {
-      pc(self::$api_url, "Proxy");
     }
 
     self::$output->api_uri = self::$api_url;

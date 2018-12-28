@@ -33,12 +33,9 @@ class Render {
     $obj->Success = $this->_api_results->success; // why is this capitalized?
     $obj->html = $this->_page;
     $obj->location = $this->_api_results->api->Location;
-
     $obj_json = json_encode($obj);
 
     $r = $this->_api_results->params->callback . "(" . $obj_json . ")";
-
-    //pqd($r);
     return $r;
   }
 
