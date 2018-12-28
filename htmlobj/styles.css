@@ -1,0 +1,52 @@
+.not-found {
+  text-align: center;
+}
+
+.container {
+  max-width: 1260px;
+  margin: auto;
+  vertical-align: text-top;
+}
+
+.grid_9 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 75%;
+  max-width: 900px;
+  overflow:hidden;
+  vertical-align: text-top;
+}
+
+.grid_3 {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25%;
+  margin-right: 25px;
+  max-width: 300px;
+  vertical-align: text-top;
+}
+
+article {
+  border-bottom: thin solid #000;
+}
+
+@media only screen and (max-width: 1265px) {
+
+  .grid_9 {
+    max-width: 65%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .grid_3, .grid_9 {
+    display:block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* admin layout preview */
+.header .btnSearch { background-color: #ff00f2; } .hawk-searchView .hawk-viewOptionOn { border-bottom: 5px solid #f32427; } .hawk-searchView .hawk-viewOptionOn:after { border-top-color: #f32427; } .btnWrapper:link, .btnWrapper:visited, .btn_tmp { background-color: #f37624; } .hawk-listingControls .hawk-mainControls { background: #007533; } .hawk-listingControls .hawk-pagination .hawk-paging .hawk-pageActive { background-color: #b6b6b6; } .hawk-railNavHeading { background: #007533; } .hawk-guidedNavWrapper .hawk-groupHeading { color: #000000; } .itemList .itemWrapper_tmp { border: 1px solid #d4d4d4; } .itemWrapper_tmp .itemTitle_tmp { border-bottom: 1px dashed #d4d4d4; } .hawk-siteLogo { background: url(/sites/shared/images/logoHawk2.png) no-repeat 0 0; }
