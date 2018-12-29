@@ -1,4 +1,4 @@
-# Hawksearch PHP Integration
+# Hawksearch PHP Integration Examples
 
 This code repository contains PHP code to help a developer to understand and provide the foundation to start the process of integrate Hawksearch's HTML Object and Hybrid Proxy approach to a given project.  For the Hybrid Proxy approach, the example code show cases the use of a custom results set (in the form of a `print_r` data dump as seen [here](https://github.com/sarn1/example-hawksearch/blob/master/hybridproxy/render.php#L117)) but uses the "facets" layout almost as-is from Hawksearch.  Both examples also allows for "content" results set which may or may not be available with your account.  Remove this code as needed.
 
