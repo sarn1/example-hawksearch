@@ -59,8 +59,8 @@ class HawkSearch {
     if (!empty($params)) {
       self::$output->params = (object)$params;
       foreach ($params as $key=>$value) {
-        if ($key !== 'lpurl') { // this breaks htmlobj & hybridproxy for some reason
-          if ($key !== 'json') {  // for hybrid proxy
+        if ($key !== 'lpurl') { // this breaks htmlobj & proxy/hybrid for some reason
+          if ($key !== 'json') {  // for proxy/hybrid
             if ($key == 'q' && strpos(self::$api_url, 'keyword') == false) {
               self::$api_url .= "&keyword=" . urlencode($value);
               self::$keyword = urlencode($value);

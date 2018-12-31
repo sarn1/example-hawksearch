@@ -1,7 +1,7 @@
 <?php
 
 define ("HTML_PROXY_URL","/htmlobj/proxy");  // url to your proxy handler, this is for the htmlobj example
-define ("HYBRID_PROXY_URL","/hybridproxy/proxy");  // url to your proxy handler, this is for the hybridproxy example
+define ("PROXY_HYBRID_URL","/proxyhybrid/proxy");  // url to your proxy handler, this is for the proxy/hybrid example
 
 
 // these are provided from hawksearch

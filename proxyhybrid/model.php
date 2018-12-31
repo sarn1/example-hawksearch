@@ -24,11 +24,10 @@ class ApiModel {
   public $MetaKeywords;
   public $RelCanonical;
   public $Keyword;
-  //public $Original;
 
   public function set ($data) {
     if (isset($data->Success) && $data->Success) {
-      // hybrid proxy route
+      // proxy/hybrid route
       $this->Title = $data->Data->Title;
       $this->TopText = $data->Data->TopText;
       $this->BreadCrumb = $data->Data->BreadCrumb;
