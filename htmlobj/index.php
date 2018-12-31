@@ -46,7 +46,7 @@ $a = HawkSearch::search($params);
 </head>
 <body>
 
-<form method="get" action="/htmlobj/index.php" style="margin-bottom: 25px; background-color: #0f0f0f; padding: 10px;">
+<form method="get" action="/htmlobj/" style="margin-bottom: 25px; background-color: #0f0f0f; padding: 10px;">
   <input type="text" id="searchbox" class="" name="keyword" placeholder="<?php echo (!empty($_GET["keyword"])) ? htmlspecialchars($_GET["keyword"], ENT_QUOTES, 'UTF-8') : ''; ?>">
   <input type="submit">
 </form>
@@ -54,7 +54,7 @@ $a = HawkSearch::search($params);
 <?php if (empty($a->params)): ?>
   <div class="not-found">
     <h1>Search!</h1>
-    <form method="get" action="/htmlobj/index.php" style="margin-bottom: 25px;">
+    <form method="get" action="/htmlobj/" style="margin-bottom: 25px;">
       <label>Search:</label>
       <input type="text" id="textboxname" class="textboxname" name="keyword" placeholder="<?php echo (!empty($_GET["keyword"])) ? htmlspecialchars($_GET["keyword"], ENT_QUOTES, 'UTF-8') : ''; ?>">
       <input type="submit">
@@ -71,7 +71,7 @@ $a = HawkSearch::search($params);
     </div>
 
     <div class="grid_9">
-      <form method="get" action="/htmlobj/index.php" style="margin-bottom: 25px;">
+      <form method="get" action="/htmlobj/" style="margin-bottom: 25px;">
         <label>Search:</label>
         <input type="text" id="textboxname" class="textboxname" name="keyword" placeholder="<?php echo (!empty($keyword)) ? $keyword : ''; ?>">
         <input type="submit">

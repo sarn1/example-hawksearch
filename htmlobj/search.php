@@ -27,7 +27,6 @@ class HawkSearch {
 
   private static function init()
   {
-
     self::$engine_name = ENGINE_NAME;
     self::$engine_api_key = ENGINE_KEY;
     self::$environment = ENGINE_ENV;
@@ -40,7 +39,6 @@ class HawkSearch {
     self::$output->response = null;
     self::$output->api_uri = null;
     self::$output->no_results = true;
-
   }
 
   private static function set($type, $params = null) {
@@ -75,7 +73,6 @@ class HawkSearch {
     self::$output->api_type = self::$api_type;
     self::$caller = strtoupper($type);
   }
-
 
   public static function search ($params = null) {
     self::proc('SEARCH', $params);

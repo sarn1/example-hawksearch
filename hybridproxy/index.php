@@ -50,7 +50,7 @@ $r = $render->results(); // render onload
 </head>
 <body>
 
-<form method="get" action="/hybridproxy/index.php" style="margin-bottom: 25px; background-color: #0f0f0f; padding: 10px;">
+<form method="get" action="/hybridproxy/" style="margin-bottom: 25px; background-color: #0f0f0f; padding: 10px;">
   <input type="text" id="searchbox" class="" name="keyword" placeholder="<?php echo (!empty($_GET["keyword"])) ? htmlspecialchars($_GET["keyword"], ENT_QUOTES, 'UTF-8') : ''; ?>">
   <input type="submit">
 </form>

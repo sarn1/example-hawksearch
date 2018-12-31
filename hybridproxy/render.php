@@ -69,7 +69,7 @@ class Render {
             <p><span class="alert">Did you mean?</span></p>
             <p>
               <?php foreach ($this->_api_results->api->DidYouMeanArr as $m): ?>
-                <a href="/search?keyword=<?=$m?>"><?=$m?></a>&nbsp;
+                <a href="/hybridproxy/?keyword=<?=$m?>"><?=$m?></a>&nbsp;
               <?php endforeach; ?>
             </p>
             <br />
