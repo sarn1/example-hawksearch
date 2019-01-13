@@ -28,12 +28,16 @@ Proxy/Hybrid Integration Method:
 
 - This code was developed in PHP 7.2 but should be backwards compatible to PHP 5.4.  
 - cURL must be enabled in your `PHP.ini`.
+- Additional documentation can be found at [Hawksearch's website] (http://docs.hawksearch.net/display/HSKB/User+Interface+Integration+-+API)
 
 
 ## Debug
 
 Because the Proxy/Hybrid is a more complex integration, I've also added a debug feature to the code.  At any given time, you can append a querystring parameter of `debug=api` to get the JSON output of data prior to reaching the view.  (e.g. `http://test.local/proxyhybrid/?debug=api`)
 
+## To Do
+- Example to integrate Hawksearch Tracking.
+- Example for landing pages and banners.
 
 ## License
 
